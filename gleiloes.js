@@ -1,15 +1,15 @@
-import requests
-from bs4 import BeautifulSoup
+import requests;
+from bs4 import BeautifulSoup;
 
 /*# Open a connection to the Wikipedia homepage.*/
-url = "https://en.wikipedia.org/wiki/Main_Page"
-response = requests.get(url)
+url = "https://en.wikipedia.org/wiki/Main_Page";
+response = requests.get(url);
 
 /*# Parse the HTML of the website.*/
-soup = BeautifulSoup(response.content, "html.parser")
+soup = BeautifulSoup(response.content, "html.parser");
 
 /*# Extract the title of the first article.*/
-article_title = soup.find("h1").text
+article_title = soup.find("h1").text;
 
 /*Print the title of the article.*/
 print(article_title);
