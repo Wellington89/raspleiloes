@@ -12,7 +12,7 @@ soup = BeautifulSoup(response.content, "html.parser")
 article_title = soup.find("h1").text
 
 /*Print the title of the article.*/
-print(article_title)
+print(article_title);
 
 /* Passo a Passo
 1. Abra uma conexão com o site que você deseja raspar.
